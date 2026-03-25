@@ -326,6 +326,7 @@ xxhash==3.6.0
 yarl==1.22.0
 yfinance==0.2.66
 youtube-transcript-api==1.2.3
+python-dotenv
 zipp==3.23.0
 zstandard==0.25.0
 
