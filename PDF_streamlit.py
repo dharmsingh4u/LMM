@@ -10,14 +10,16 @@ from langgraph.graph import StateGraph,START, END,MessagesState
 from typing import TypedDict,Annotated,Literal
 import os 
 import sys
-sys.path.insert(1, r'D:\Notebooks\LLM\env')
+from dotenv import load_dotenv
+load_dotenv()
+#sys.path.insert(1, r'D:\Notebooks\LLM\env')
 #sys.path.insert(2, r'D:\Notebooks\LLM\langchain_document_loader')
-from enviorment import load_env
+#from enviorment import load_env
 from langgraph.prebuilt import ToolNode,tools_condition
 from langchain_core.tools import tool
 #from pydirectoryloader import rag_function
 import os 
-load_env()
+load_dotenv()
 from pdf_loader import loader
 from langchain_core.runnables import RunnableParallel, RunnablePassthrough, RunnableLambda
 from langchain_core.output_parsers import StrOutputParser
