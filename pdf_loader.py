@@ -2,11 +2,11 @@ import sys
 from langchain_openai import ChatOpenAI,OpenAIEmbeddings
 from langchain_core.messages import HumanMessage
 from langchain_core.prompts import PromptTemplate,ChatPromptTemplate
-sys.path.insert(1, r'D:\Notebooks\LLM\env')
-from enviorment import load_env
+#sys.path.insert(1, r'D:\Notebooks\LLM\env')
+from dotenv import load_dotenv
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 import os 
-load_env()
+load_dotenv()
 model =ChatOpenAI()
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.document_loaders import PyPDFLoader
